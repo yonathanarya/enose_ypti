@@ -3,9 +3,9 @@
 #include <WiFiClient.h>
 #include <Wire.h>
 
-const char* ssid     = "sihwidiyanto";
-const char* password = "wonos141265";
-const char* serverName = "http://192.168.1.8:8080/enose/post-esp-data.php";
+const char* ssid     = "ulululu";
+const char* password = "12345678";
+const char* serverName = "http://enose-ypti.masuk.id/post-esp-data.php";
 
 String apiKeyValue = "tPmAT5Ab3j7F9";
 String sensorLocation = "Mesin1";
@@ -17,7 +17,7 @@ void sendHttp();
 
 void setup() 
 {
-  Serial.begin(9600);
+  Serial.begin(57600);
   while (!Serial);
   Serial.println("IoT System for Polymer Gas Detector");
   WiFi.begin(ssid, password);
