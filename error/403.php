@@ -18,8 +18,9 @@
                         <div class="row justify-content-center">
                             <div class="col-lg-6">
                                 <div class="text-center mt-4">
-                                    <img class="mb-4 img-error" src="assets/img/error-404-monochrome.svg" />
-                                    <p class="lead">Access to this file or directory is forbidden.</p>
+                                    <h1 class="display-1">401</h1>
+                                    <p class="lead">Forbidden</p>
+                                    <p>Access to this file or directory is forbidden.</p>
                                     <a href="/index.php">
                                         <i class="fas fa-arrow-left me-1"></i>
                                         Return to Dashboard
