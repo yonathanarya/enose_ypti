@@ -18,7 +18,7 @@
                         <div class="row justify-content-center">
                             <div class="col-lg-6">
                                 <div class="text-center mt-4">
-                                    <h1 class="display-1">401</h1>
+                                    <h1 class="display-1">403</h1>
                                     <p class="lead">Forbidden</p>
                                     <p>Access to this file or directory is forbidden.</p>
                                     <a href="/index.php">
