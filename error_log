@@ -193,3 +193,4 @@
 [04-Mar-2022 12:13:25 UTC] PHP Warning:  require(/home/enoseypt/public_htmlfunction/footer.php): failed to open stream: No such file or directory in /home/enoseypt/public_html/charts.php on line 48
 [04-Mar-2022 12:13:25 UTC] PHP Fatal error:  require(): Failed opening required '/home/enoseypt/public_htmlfunction/footer.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home/enoseypt/public_html/charts.php on line 48
 [07-Mar-2022 09:25:03 UTC] PHP Warning:  mysqli::__construct(): (HY000/2002): No such file or directory in /home/enoseypt/public_html/post-esp-data.php on line 22
+[12-Mar-2022 08:17:46 UTC] PHP Warning:  mysqli::__construct(): (HY000/1040): Too many connections in /home/enoseypt/public_html/post-esp-data.php on line 22
