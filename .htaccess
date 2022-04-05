@@ -1,6 +1,7 @@
 ErrorDocument 404 /error/404.php
 ErrorDocument 401 /error/401.php
 ErrorDocument 500 /error/500.php
+Options -Indexes
 
 # php -- BEGIN cPanel-generated handler, do not edit
 # Set the “ea-php70” package as the default “PHP” programming language.
