@@ -10,74 +10,74 @@ $(document).ready(function () {
         function showGraph()
         {
             {
-                $.post("/function/data.php",
+                $.post("/function/data_polutant.php",
                 function (data)
                 {
                     console.log(data);
                     var id = [];
                     var reading_time = [];
-                    var mq3 = [];
-                    var mq7 = [];
-                    var mq9 = [];
-                    var mg811 = [];
-                    var tgs2600 = [];
+                    var GAS1 = [];
+                    var GAS2 = [];
+                    var GAS3 = [];
+                    var GAS4 = [];
+                    var GAS5 = [];
 
                     for (var i in data) {
                         id.push(data[i].id);
                         reading_time.push(data[i].reading_time);
-                    //    mq3.push(data[i].mq3);
-                        mq7.push(data[i].mq7);
-                        mq9.push(data[i].mq9);
-                        mg811.push(data[i].mg811);
-                        tgs2600.push(data[i].tgs2600);
+                        GAS1.push(data[i].GAS1);
+                        GAS2.push(data[i].GAS2);
+                        GAS3.push(data[i].GAS3);
+                        GAS4.push(data[i].GAS4);
+                        GAS5.push(data[i].GAS5);
                     }
 
                     var chartdata = {
                         labels: reading_time,
                         datasets: [
-                    //        {
-                    //            label: 'TGS2600',
-                    //            borderColor: '#CC0066',
-                    //            hoverBackgroundColor: '#CCCCCC',
-                    //            hoverBorderColor: '#666666',
-                    //            data: mq3,
-                    //            fill: false,
-                    //            lineTension: 0,
-                    //            
-                    //        },
                             {
-                                label: 'MQ3',
+                                label: 'GAS1',
+                                borderColor: '#CC0066',
+                                hoverBackgroundColor: '#CCCCCC',
+                                hoverBorderColor: '#666666',
+                                data: GAS1,
+                                fill: false,
+                                lineTension: 0,
+                                
+                            },
+                            {
+                                label: 'GAS2',
                                 borderColor: '#00A7B5',
                                 hoverBackgroundColor: '#CCCCCC',
                                 hoverBorderColor: '#666666',
-                                data: mq7,
+                                data: GAS2,
                                 fill: false,
                                 lineTension: 0,
                             },
                             {
-                                label: 'MQ9',
+                                label: 'GAS3',
                                 borderColor: '#2D3131',
                                 hoverBackgroundColor: '#CCCCCC',
                                 hoverBorderColor: '#666666',
-                                data: mq9,
+                                data: GAS3,
                                 fill: false,
                                 lineTension: 0,
                             },
                             {
-                                label: 'MQ135',
+                                label: 'GAS4',
                                 borderColor: '#BAD090',
                                 hoverBackgroundColor: '#CCCCCC',
                                 hoverBorderColor: '#666666',
-                                data: mg811,
+                                data: GAS4,
                                 fill: false,
                                 lineTension: 0,
                             },
                             {
-                                label: 'MQ7',
+                                label: 'GAS5',
                                 borderColor: '#B0E2FF',
                                 hoverBackgroundColor: '#CCCCCC',
                                 hoverBorderColor: '#666666',
-                                data: tgs2600,
+                                data: GAS5,
                                 fill: false,
                                 lineTension: 0,
                             },

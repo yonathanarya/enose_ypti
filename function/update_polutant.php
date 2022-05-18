@@ -1,6 +1,6 @@
 <?php
     $servername = "localhost";
-    $dbname = "enoseypt_mesin1";
+    $dbname = "enoseypt_polutant";
     $username = "enoseypt_admin";
     $password = "polim3rg4s";
     

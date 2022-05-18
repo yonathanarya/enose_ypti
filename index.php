@@ -16,6 +16,7 @@
     <?php
         require($_SERVER['DOCUMENT_ROOT'].'/function/sidebar.php');
     ?>
+            <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
             <div id="layoutSidenav_content">
                 <main>
                     <div class="container-fluid px-4">
@@ -24,15 +25,30 @@
                             <li class="breadcrumb-item active">Menunjukkan status untuk detektor gas polimer</li>
                         </ol>
                         <div class="row">
-                            <?php
-                                require($_SERVER['DOCUMENT_ROOT'].'/function/warning.php');
-                            ?>
+                            <script>
+                            $(document).ready(function(){  
+                                setInterval(function(){   
+                                    $("p1").load('/function/warning.php');
+                                }, 5000);
+                            });
+                            </script>
+                            <p1></p1>
+                        </div>
+                        <div class="row">
+                            <script>
+                            $(document).ready(function(){  
+                                setInterval(function(){   
+                                    $("p2").load('/function/polutant_ppm.php');
+                                }, 5000);
+                            });
+                            </script>
+                            <p2></p2>
                         </div>
                         <div></div>
                         <div class="card mb-4">
                             <div class="card-header">
                                 <i class="fas fa-chart-area me-1"></i>
-                                Grafik Pembacaan Sensor
+                                Grafik Pembacaan Sensor Polimer
                             </div>
                             <div class="card-body">
                                 <div id="chart-container">
@@ -46,7 +62,7 @@
                         <div class="card mb-4">
                             <div class="card-header">
                                 <i class="fas fa-table me-1"></i>
-                                Perekaman Data Sensor
+                                Tabel Pembacaan Sensor Polimer
                             </div>
                             <div class="card-body">
                             <?php
@@ -65,7 +81,6 @@
         </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
         <script src="js/scripts.js"></script>
-        <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
         <?php
             require($_SERVER['DOCUMENT_ROOT'].'/function/chart.php');
