@@ -16,8 +16,7 @@
         <thead>
             <tr> 
                 <th>ID</th> 
-                <th>Lokasi</th> 
-                
+                <th>Lokasi</th>
                 <th>MQ-3</th>
                 <th>MQ-9</th>
                 <th>MQ-135</th>
@@ -29,8 +28,7 @@
         <tfoot>
             <tr> 
                 <th>ID</th> 
-                <th>Lokasi</th> 
-
+                <th>Lokasi</th>
                 <th>MQ-3</th>
                 <th>MQ-9</th>
                 <th>MQ-135</th>
