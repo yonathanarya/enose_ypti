@@ -23,7 +23,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         } 
         
         $sql = "INSERT INTO sensordata (GAS1, GAS2, GAS3)
-        VALUES ('" . $GAS1 . "', '" . $GAS2 . "', '" . $GAS3 . "')";
+        VALUES ('" . $GAS1 . "', '" . $GAS2 . "', '" . $GAS3 . "', '" . $GAS4 . "', '" . $GAS5 . "')";
         
         if ($conn->query($sql) === TRUE) {
             echo "New record created successfully";
