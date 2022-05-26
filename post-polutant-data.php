@@ -22,7 +22,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             die("Connection failed: " . $conn->connect_error);
         } 
         
-        $sql = "INSERT INTO sensordata (GAS1, GAS2, GAS3)
+        $sql = "INSERT INTO sensordata (GAS1, GAS2, GAS3, GAS4, GAS5)
         VALUES ('" . $GAS1 . "', '" . $GAS2 . "', '" . $GAS3 . "', '" . $GAS4 . "', '" . $GAS5 . "')";
         
         if ($conn->query($sql) === TRUE) {
