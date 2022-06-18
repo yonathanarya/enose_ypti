@@ -19,24 +19,19 @@ $(document).ready(function () {
                     var GAS1 = [];
                     var GAS2 = [];
                     var GAS3 = [];
-                    var GAS4 = [];
-                    var GAS5 = [];
-
                     for (var i in data) {
                         id.push(data[i].id);
                         reading_time.push(data[i].reading_time);
                         GAS1.push(data[i].GAS1);
                         GAS2.push(data[i].GAS2);
                         GAS3.push(data[i].GAS3);
-                        GAS4.push(data[i].GAS4);
-                        GAS5.push(data[i].GAS5);
                     }
 
                     var chartdata = {
                         labels: reading_time,
                         datasets: [
                             {
-                                label: 'GAS1',
+                                label: 'CO',
                                 borderColor: '#CC0066',
                                 hoverBackgroundColor: '#CCCCCC',
                                 hoverBorderColor: '#666666',
@@ -46,7 +41,7 @@ $(document).ready(function () {
                                 
                             },
                             {
-                                label: 'GAS2',
+                                label: 'NH3',
                                 borderColor: '#00A7B5',
                                 hoverBackgroundColor: '#CCCCCC',
                                 hoverBorderColor: '#666666',
@@ -55,29 +50,11 @@ $(document).ready(function () {
                                 lineTension: 0,
                             },
                             {
-                                label: 'GAS3',
+                                label: 'NO',
                                 borderColor: '#2D3131',
                                 hoverBackgroundColor: '#CCCCCC',
                                 hoverBorderColor: '#666666',
                                 data: GAS3,
-                                fill: false,
-                                lineTension: 0,
-                            },
-                            {
-                                label: 'GAS4',
-                                borderColor: '#BAD090',
-                                hoverBackgroundColor: '#CCCCCC',
-                                hoverBorderColor: '#666666',
-                                data: GAS4,
-                                fill: false,
-                                lineTension: 0,
-                            },
-                            {
-                                label: 'GAS5',
-                                borderColor: '#B0E2FF',
-                                hoverBackgroundColor: '#CCCCCC',
-                                hoverBorderColor: '#666666',
-                                data: GAS5,
                                 fill: false,
                                 lineTension: 0,
                             },
